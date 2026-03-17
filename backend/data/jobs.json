@@ -1,0 +1,64 @@
+{
+  "domains": {
+    "Frontend Development": {
+      "roles": [
+        {
+          "name": "Frontend Developer",
+          "required_skills": ["react", "javascript", "html", "css", "tailwind", "responsive"],
+          "nice_to_have": ["typescript", "nextjs", "vite"]
+        },
+        {
+          "name": "React Developer",
+          "required_skills": ["react", "hooks", "state", "components", "javascript"],
+          "nice_to_have": ["redux", "zustand", "testing"]
+        }
+      ]
+    },
+    "Backend Development": {
+      "roles": [
+        {
+          "name": "Backend Developer",
+          "required_skills": ["node", "express", "database", "sql", "rest", "api"],
+          "nice_to_have": ["mongodb", "prisma", "authentication"]
+        },
+        {
+          "name": "Full Stack Developer",
+          "required_skills": ["react", "node", "database", "api", "frontend"],
+          "nice_to_have": ["typescript", "docker"]
+        }
+      ]
+    },
+    "Data Analytics": {
+      "roles": [
+        {
+          "name": "Data Analyst",
+          "required_skills": ["sql", "python", "excel", "power bi", "tableau", "data"],
+          "nice_to_have": ["statistics", "r", "etl"]
+        },
+        {
+          "name": "Business Analyst",
+          "required_skills": ["sql", "excel", "requirements", "stakeholder", "data"],
+          "nice_to_have": ["agile", "jira"]
+        }
+      ]
+    },
+    "Data Science": {
+      "roles": [
+        {
+          "name": "Data Scientist",
+          "required_skills": ["python", "machine learning", "statistics", "pandas", "scikit"],
+          "nice_to_have": ["tensorflow", "pytorch"]
+        }
+      ]
+    },
+    "DevOps": {
+      "roles": [
+        {
+          "name": "DevOps Engineer",
+          "required_skills": ["docker", "kubernetes", "aws", "ci cd", "terraform"],
+          "nice_to_have": ["jenkins", "ansible"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Backend uploads
+backend/uploads/
+
+# Frontend
+frontend/dist/
+frontend/.vite/
+
+# Logs
+*.log
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
