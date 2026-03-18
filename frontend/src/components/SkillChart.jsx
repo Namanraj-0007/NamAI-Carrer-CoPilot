@@ -28,9 +28,14 @@ export default function SkillChart({ extractedSkills, missingSkills }) {
           <Tooltip />
         </PieChart>
       </ResponsiveContainer>
-      {total > 0 && (
+{total > 0 ? (
         <div className="text-center mt-4">
           <p className="text-2xl font-bold text-slate-900">{total} total skills analyzed</p>
+        </div>
+      ) : (
+        <div className="text-center py-12 text-slate-500">
+          <p className="text-xl">No skills analyzed yet</p>
+          <p className="text-sm mt-2 opacity-75">Upload your resume to see skill breakdown</p>
         </div>
       )}
     </div>

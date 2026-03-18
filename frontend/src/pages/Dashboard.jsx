@@ -103,51 +103,51 @@ export default function Dashboard() {
 
         <DashboardCard title="Skills Found" value={extractedSkills.length} icon="🛠️">
           <div className="flex flex-wrap gap-1 mt-2">
-            {extractedSkills.slice(0, 6).map((skill, i) => (
+{extractedSkills.length > 0 ? extractedSkills.slice(0, 6).map((skill, i) => (
               <span key={i} className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
                 {skill}
               </span>
-            ))}
+            )) : <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm font-medium">No skills detected</span>}
           </div>
         </DashboardCard>
 
         <DashboardCard title="Skill Gaps" value={missingSkills.length} icon="🎯">
           <div className="flex flex-wrap gap-1 mt-2">
-            {missingSkills.slice(0, 4).map((skill, i) => (
+{missingSkills.length > 0 ? missingSkills.slice(0, 4).map((skill, i) => (
               <span key={i} className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
                 {skill}
               </span>
-            ))}
+            )) : <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm font-medium">No gaps found</span>}
           </div>
         </DashboardCard>
 
         <DashboardCard title="Recommended Roles" value={recommended_roles.length} icon="💼">
           <div className="flex flex-wrap gap-1 mt-2">
-            {recommended_roles.slice(0, 3).map((role, i) => (
+{recommended_roles.length > 0 ? recommended_roles.slice(0, 3).map((role, i) => (
               <span key={i} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                 {role}
               </span>
-            ))}
+            )) : <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm font-medium">No roles suggested</span>}
           </div>
         </DashboardCard>
 
         <DashboardCard title="Strengths" value={strengths.length} icon="✅">
           <div className="mt-2 space-y-1">
-            {strengths.slice(0, 3).map((s, i) => (
+{strengths.length > 0 ? strengths.slice(0, 3).map((s, i) => (
               <div key={i} className="text-xs bg-green-100 text-green-800 p-2 rounded">
                 {s}
               </div>
-            ))}
+            )) : <div className="text-xs bg-slate-100 text-slate-600 p-2 rounded text-center">No strengths identified</div>}
           </div>
         </DashboardCard>
 
         <DashboardCard title="Weaknesses" value={weaknesses.length} icon="⚠️">
           <div className="mt-2 space-y-1">
-            {weaknesses.slice(0, 3).map((w, i) => (
+{weaknesses.length > 0 ? weaknesses.slice(0, 3).map((w, i) => (
               <div key={i} className="text-xs bg-yellow-100 text-yellow-800 p-2 rounded">
                 {w}
               </div>
-            ))}
+            )) : <div className="text-xs bg-slate-100 text-slate-600 p-2 rounded text-center">No weaknesses found</div>}
           </div>
         </DashboardCard>
       </div>
@@ -169,10 +169,15 @@ export default function Dashboard() {
               <p className="text-slate-600">Suggestions, ATS, rewrites</p>
             </div>
           </div>
-          {suggestions && (
+{suggestions ? (
             <div>
               <h4 className="font-bold text-slate-900 mb-2">Quick Tips</h4>
               <p className="text-lg whitespace-pre-wrap">{suggestions}</p>
+            </div>
+          ) : (
+            <div className="text-center py-8 text-slate-500">
+              <p className="text-lg">No suggestions available yet.</p>
+              <p className="text-sm mt-2 opacity-75">Complete analysis for personalized tips</p>
             </div>
           )}
           {ats_tips.length > 0 && (

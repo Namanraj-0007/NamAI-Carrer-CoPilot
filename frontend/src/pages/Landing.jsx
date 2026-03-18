@@ -37,11 +37,7 @@ export default function Landing() {
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl blur-xl opacity-75 scale-125 animate-pulse -z-10"></div>
           </Link>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm text-slate-500 dark:text-slate-400 opacity-80">
-            <span>Powered by Grok AI • Trusted by developers</span>
-            <div className="w-24 h-px bg-gradient-to-r from-slate-300 to-slate-500 dark:from-slate-600 dark:to-slate-400"></div>
-            <span>PDF upload • Instant results</span>
-          </div>
+
         </div>
         
         {/* Floating elements */}

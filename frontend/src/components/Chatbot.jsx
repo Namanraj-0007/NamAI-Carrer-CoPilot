@@ -102,9 +102,7 @@ export default function Chatbot({ isOpen, onClose }) {
             )}
           </button>
         </div>
-        <p className="text-xs text-slate-500 mt-2 text-center">
-          **Groq AI powered** - Harsh's Career Copilot 🚀
-        </p>
+
       </div>
     </div>
   );
