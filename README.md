@@ -199,7 +199,7 @@ NamAI-Career-Copilot/
 
 ## 👨‍💻 Author
 
-**Naman Raj**
+**Namandip Raj**
 
 🚀 AI Developer | Full Stack Engineer  
 
